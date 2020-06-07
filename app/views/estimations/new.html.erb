@@ -1,7 +1,11 @@
-<%= form_for(@estimation) do |f| %>
-  <%= f.text :first_name %>
-  <%= f.text :last_name %>
-  <%= f.text :address %>
-  <%= f.text :type %>
-  <%= f.submit %>
-<% end %>
+<div class="container">
+  <h1>Obtenir une estimation gratuite</h1>
+  <p>Souhaitez-vous obtenir une estimation gratuite de votre propriété? Remplissez tout simplement le formulaire ci-dessous et le tour est joué !</p>
+  <%= simple_form_for(@estimation) do |f| %>
+    <%= f.input :first_name, label: 'Prénom' %>
+    <%= f.input :last_name, label: 'Nom de famille' %>
+    <%= f.input :address, label: 'Adresse' %>
+    <%= f.input :type, label: 'Je voudrais vendre...', collection: ["Vendre dans les 3 prochains mois", "Vendre dans les 6 prochains mois", "Vendre dans les 12 prochains mois", "J'aimerais seulement avoir mon estimation"] %>
+    <%= f.button :submit, 'Envoyer', class:"btn btn-primary" %>
+  <% end %>
+</div>

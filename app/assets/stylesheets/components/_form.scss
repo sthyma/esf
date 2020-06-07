@@ -1,0 +1,7 @@
+.home-form {
+  display: flex;
+  justify-content: center;
+  & .form-inline div {
+    display: inline-block;
+  }
+}

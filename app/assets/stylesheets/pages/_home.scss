@@ -1,1 +1,18 @@
-// Specific CSS for your home-page
+.header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  border: 3px solid red;
+}
+
+.header h1 span {
+  color: $dark-blue;
+  font-weight: bolder;
+}
+
+.home-picture img{
+  width: 100%;
+  object-fit: cover;
+}

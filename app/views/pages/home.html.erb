@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div class="header">
+    <h1>Quelle est la <br><span>valeur de ma maison?</span></h1>
+  </div>
+
+  <div class="home-form">
+    <%= simple_form_for(@estimation) do |f| %>
+    <%= f.input_field :address, label: false, placeholder: 'Entrez votre addresse' %>
+    <%= f.button :submit, 'Estimer', class:"btn btn-esf", formaction: new_estimation_path %>
+    <% end %>
+  </div>
+
+  <div class="home-picture">
+    <%= image_tag "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80" %>
+  </div>
+</div>
