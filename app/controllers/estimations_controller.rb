@@ -7,7 +7,7 @@ class EstimationsController < ApplicationController
     @estimation = Estimation.new(estimation_params)
 
     if @estimation.save
-      redirect_to root
+      redirect_to '/'
     else
       render :new
     end
@@ -15,6 +15,6 @@ class EstimationsController < ApplicationController
 
   private
   def estimation_params
-    params.require(:estimation).permit(:first_name, :last_name, :address, :type)
+    params.require(:estimation).permit(:first_name, :last_name, :address, :type_estimation)
   end
 end

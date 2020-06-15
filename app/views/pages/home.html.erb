@@ -6,7 +6,10 @@
   <div class="home-form">
     <%= simple_form_for(@estimation) do |f| %>
     <%= f.input_field :address, label: false, placeholder: 'Entrez votre addresse' %>
-    <%= f.button :submit, 'Estimer', class:"btn btn-esf", formaction: new_estimation_path %>
+    <%#= f.hidden_field :first_name, value: "Entrez votre nom..." %>
+    <%#= f.hidden_field :last_name, value: "Entrez votre nom..." %>
+    <%#= f.hidden_field :type_estimation, value: " " %>
+    <%= f.button :submit, 'Estimer', class:"btn btn-esf", formaction: estimations_path %>
     <% end %>
   </div>
 

@@ -5,7 +5,7 @@
     <%= f.input :first_name, label: 'Prénom' %>
     <%= f.input :last_name, label: 'Nom de famille' %>
     <%= f.input :address, label: 'Adresse' %>
-    <%= f.input :type, label: 'Je voudrais vendre...', collection: ["Vendre dans les 3 prochains mois", "Vendre dans les 6 prochains mois", "Vendre dans les 12 prochains mois", "J'aimerais seulement avoir mon estimation"] %>
+    <%= f.input :type_estimation, label: 'Je voudrais vendre...', as: :radio_buttons, collection: ["Vendre dans les 3 prochains mois", "Vendre dans les 6 prochains mois", "Vendre dans les 12 prochains mois", "J'aimerais seulement avoir mon estimation"] %>
     <%= f.button :submit, 'Envoyer', class:"btn btn-primary" %>
   <% end %>
 </div>
