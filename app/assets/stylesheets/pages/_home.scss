@@ -5,12 +5,20 @@
   align-items: center;
   flex-direction: column;
   height: 50vh;
-  background-color: $dark-blue;
+  margin-bottom: 235px;
+  & > p {
+    width: 400px;
+    text-align: justify;
+    margin-top: 32px;
+    margin-bottom: 64px;
+  }
 }
 
 .header h1 {
-  color: white;
+  color: black;
   font-weight: bolder;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 .home-picture img{
@@ -19,20 +27,60 @@
 }
 
 .header a {
-  color: white;
+  color: black;
   text-decoration: none;
   &:hover {
     font-weight: bolder;
     text-decoration: none;
-    color: white;
+    color: black;
   }
 }
 
 .number {
-  background-color: $dark-blue;
-  color: white;
+  color: black;
   font-weight: bolder;
   font-size: 32px;
   // padding: 12px;
   width: 45px !important;
 }
+
+.home-img img {
+  right: 0;
+  z-index: -1;
+}
+
+.home-left {
+  padding: 64px;
+}
+
+#fonctionnement {
+  & h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 32px;
+  }
+}
+
+.step {
+  margin-bottom: 16px;
+}
+
+.number {
+  color: white;
+  background-color:black;
+  padding: 32px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+
+.step-info {
+  padding-left: 32px;
+  height: 80px;
+  width: 275px;
+  transition: 0.3s;
+}
+
+.step-info:hover {
+    border-bottom: 3px solid black;
+  }

@@ -5,6 +5,8 @@
 .esf-navbar-home {
   background-color: $dark-blue;
   padding: 12px;
+  position: sticky;
+  top: 0;
   & li {
     list-style: none;
     display: inline-block;
@@ -24,6 +26,8 @@
 .esf-navbar {
   background-color: white;
   padding: 12px;
+  position: sticky;
+  top: 0;
   & li {
     list-style: none;
     display: inline-block;

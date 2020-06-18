@@ -1,21 +1,16 @@
-<div class="esf-navbar d-flex justify-content-between align-items-center">
-  <%= link_to root_path, class:'navbar-brand' do %>
-    <%= image_tag "logo.png" %>
-  <% end %>
-  <ul>
-    <li id='home-link'><%= link_to "Accueil", root_path %></li>
-    <li id='estimation-link'><%= link_to "Estimation", new_estimation_path %></li>
-  </ul>
-</div>
-
-<div class="container">
-  <h1>Obtenir une estimation gratuite</h1>
-  <p>Souhaitez-vous obtenir une estimation gratuite de votre propriété? Remplissez tout simplement le formulaire ci-dessous et le tour est joué !</p>
-  <%= simple_form_for(@estimation) do |f| %>
-    <%= f.input :first_name, label: 'Prénom' %>
-    <%= f.input :last_name, label: 'Nom de famille' %>
-    <%= f.input :address, label: 'Adresse', id: 'address_input' %>
-    <%= f.input :type_estimation, label: 'Je voudrais vendre...', as: :radio_buttons, collection: ["Vendre dans les 3 prochains mois", "Vendre dans les 6 prochains mois", "Vendre dans les 12 prochains mois", "J'aimerais seulement avoir mon estimation"] %>
-    <%= f.button :submit, 'Envoyer', class:"btn btn-primary" %>
-  <% end %>
+<div class="d-flex">
+  <div>
+    <%= image_tag "https://images.unsplash.com/photo-1556020685-ae41abfc9365?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"%>
+  </div>
+  <div class="container form-side">
+    <h1>Obtenir une estimation gratuite</h1>
+    <p>Souhaitez-vous obtenir une estimation gratuite de votre propriété? Remplissez tout simplement le formulaire ci-dessous et le tour est joué !</p>
+    <%= simple_form_for(@estimation) do |f| %>
+      <%= f.input :first_name, label: 'Prénom' %>
+      <%= f.input :last_name, label: 'Nom de famille' %>
+      <%= f.input :address, label: 'Adresse', id: 'address_input' %>
+      <%= f.input :type_estimation, label: 'Je voudrais vendre...', as: :radio_buttons, collection: ["Vendre dans les 3 prochains mois", "Vendre dans les 6 prochains mois", "Vendre dans les 12 prochains mois", "J'aimerais seulement avoir mon estimation"] %>
+      <%= f.button :submit, 'Envoyer', class:"btn btn-esf" %>
+    <% end %>
+  </div>
 </div>

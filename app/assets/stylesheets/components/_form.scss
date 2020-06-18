@@ -1,7 +1,33 @@
-.home-form {
-  display: flex;
-  justify-content: center;
-  & .form-inline div {
-    display: inline-block;
+.form-side {
+  padding: 64px;
+}
+
+.form-group {
+  & input {
+    border: 2px solid black;
+  }
+  & label:first-child {
+    text-transform: uppercase;
+    font-size: small;
+    color: rgb(75, 75, 75);
+  }
+  & legend {    
+    text-transform: uppercase;
+    font-size: small;
+    color: rgb(75, 75, 75);
+  }
+  & button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  & abbr {
+    display: none;
+  }
+  & input:checked ~ .checkmark {
+    background-color: red;
   }
 }
+
+

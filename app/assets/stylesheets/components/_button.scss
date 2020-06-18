@@ -1,14 +1,14 @@
 .btn-esf {
-  background: #34A1EC;
+  background: black;
   color: white;
   font-weight: bold;
   font-family: $body-font;
-  border-radius: 32px;
+  // border-radius: 32px;
   padding: 12px 32px;
   margin-bottom: 64px;
   transition: 0.5s;
   &:hover {
-    background: #a8dcff;
-    color: rgb(160, 160, 160);
+    background: rgb(75, 75, 75);
+    color: white;
   }
 }

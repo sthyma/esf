@@ -1,47 +1,36 @@
-<div class="esf-navbar-home d-flex justify-content-between align-items-center">
-  <%= link_to root_path, class:'navbar-brand' do %>
-    <%= image_tag "logo-white.png" %>
-  <% end %>
-  <ul>
-    <li id='home-link'><%= link_to "Accueil", root_path %></li>
-    <li id='estimation-link'><%= link_to "Estimation", new_estimation_path %></li>
-  </ul>
-</div>
+<div class="d-flex justify-content-between">
+  <div class="home-left">
+    <div class="header">
+      <h1>Trouvez la valeur de votre maison</h1><br>
+      <p>Avez-vous toujours voulu connaître la valeur de votre propriété ? N'attendez plus, remplissez tout simplement notre formulaire et vous en connaîtrez la valeur !</p>
+      <a href="/estimations/new">
+        <button class="btn btn-esf">Commencer !</button>
+      </a>
+      <br>
+      <a href="#fonctionnement"><i class="fas fa-home"></i> Comment cela fonctionne?</a>
+    </div>
 
-<div class="header">
-  <h1>Trouvez la valeur de votre maison</h1><br>
-  <a href="/estimations/new">
-    <button class="btn btn-esf">Commencer !</button>
-  </a>
-  <br>
-  <a href="#fonctionnement"><i class="fas fa-home"></i> Comment cela fonctionne?</a>
-</div>
+    <div class="container" id="fonctionnement">
+      <h2>Trois étapes faciles</h2>
+      <div class="step d-flex align-items-center">
+        <div class="number d-flex align-items-center justify-content-center">1</div>
+        <div class="step-info d-flex align-items-center"><p>Complétez le formulaire en ligne</p></div>
+      </div>
 
-<div class="container" id="fonctionnement">
-  <h2>Trois étapes faciles</h2>
-  <p><span class="number">1 </span> Complétez le formulaire en ligne.</p>
-  <p><span class="number">2</span> Soumettez votre formulaire. </p>
-  <p><span class="number">3</span> Un courtier immobilier vous recontactera pour vous donner son estimation.</p>
-</div>
+      <div class="step d-flex align-items-center">
+        <div class="number d-flex align-items-center justify-content-center">2</div>
+        <div class="step-info d-flex align-items-center"><p>Soumettez votre formulaire</p></div>
+      </div>      
+      
+      <div class="step d-flex align-items-center">
+        <div class="number d-flex align-items-center justify-content-center">3</div>
+        <div class="step-info d-flex align-items-center"><p>Un courtier immobilier vous recontactera pour vous donner son estimation.</p></div>
+      </div>
 
-<!--
-<div class="wrapper">
-  <div class="header">
-    <h1>Quelle est la <br><span>valeur de ma maison?</span></h1>
+    </div>
   </div>
 
-
-  <div class="home-form">
-    <%= simple_form_for(@estimation) do |f| %>
-      <%= f.input_field :address, label: false, placeholder: 'Entrez votre addresse' %>
-      <%#= f.hidden_field :first_name, value: "Entrez votre nom..." %>
-      <%#= f.hidden_field :last_name, value: "Entrez votre nom..." %>
-      <%#= f.hidden_field :type_estimation, value: " " %>
-      <%= f.button :submit, 'Estimer', class:"btn btn-esf", formaction: estimations_path %>
-    <% end %>
+  <div class="home-img">
+    <%= image_tag "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"%>
   </div>
-
-  <div class="home-picture">
-    <%= image_tag "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80" %>
-  </div>
-</div>-->
+</div>
