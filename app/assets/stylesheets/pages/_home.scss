@@ -3,16 +3,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
-  border: 3px solid red;
+  flex-direction: column;
+  height: 50vh;
+  background-color: $dark-blue;
 }
 
-.header h1 span {
-  color: $dark-blue;
+.header h1 {
+  color: white;
   font-weight: bolder;
 }
 
 .home-picture img{
   width: 100%;
   object-fit: cover;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+#fonctionnement {
+  & span {
+    background-color: $dark-blue;
+    color: white;
+    font-weight: bolder;
+    font-size: 32px;
+    padding: 12px;
+  }
 }

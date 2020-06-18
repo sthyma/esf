@@ -1,5 +1,5 @@
 class EstimationsController < ApplicationController
-  include Wicked::Wizard
+  # include Wicked::Wizard
 
   def new
     @estimation = Estimation.new
