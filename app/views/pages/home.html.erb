@@ -1,7 +1,17 @@
+<div class="esf-navbar-home d-flex justify-content-between align-items-center">
+  <%= link_to root_path, class:'navbar-brand' do %>
+    <%= image_tag "logo-white.png" %>
+  <% end %>
+  <ul>
+    <li id='home-link'><%= link_to "Accueil", root_path %></li>
+    <li id='estimation-link'><%= link_to "Estimation", new_estimation_path %></li>
+  </ul>
+</div>
+
 <div class="header">
   <h1>Trouvez la valeur de votre maison</h1><br>
   <a href="/estimations/new">
-    <button class="btn btn-esf">Commencer!</button>
+    <button class="btn btn-esf">Commencer !</button>
   </a>
   <br>
   <a href="#fonctionnement"><i class="fas fa-home"></i> Comment cela fonctionne?</a>

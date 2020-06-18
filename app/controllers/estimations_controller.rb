@@ -1,5 +1,4 @@
 class EstimationsController < ApplicationController
-  # include Wicked::Wizard
 
   def new
     @estimation = Estimation.new
@@ -9,7 +8,8 @@ class EstimationsController < ApplicationController
     @estimation = Estimation.new(estimation_params)
 
     if @estimation.save
-      redirect_to '/'
+      flash.alert = "Estimation envoyée!"
+      render :new
     else
       render :new
     end
