@@ -36,6 +36,13 @@
   }
 }
 
+.steps {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
 .number {
   color: black;
   font-weight: bolder;
