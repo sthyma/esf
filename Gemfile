@@ -5,9 +5,6 @@ ruby '2.6.6'
 # Geocoder
 gem 'geocoder'
 
-# Wicked
-gem 'wicked'
-
 # Bootstrap
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
