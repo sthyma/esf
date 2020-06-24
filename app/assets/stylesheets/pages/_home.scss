@@ -1,93 +1,13 @@
-.header {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 50vh;
-  margin-bottom: 235px;
-  & > p {
-    width: 400px;
-    text-align: justify;
-    margin-top: 32px;
-    margin-bottom: 64px;
+#top {
+  height: 90vh;
+  & img {
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: -20px -20px $burgundy;
   }
 }
 
-.header h1 {
-  color: black;
-  font-weight: bolder;
-  text-transform: uppercase;
-  font-weight: normal;
+#form {
+  margin-top: 64px;
 }
 
-.home-picture img{
-  width: 100%;
-  object-fit: cover;
-}
-
-.header a {
-  color: black;
-  text-decoration: none;
-  &:hover {
-    font-weight: bolder;
-    text-decoration: none;
-    color: black;
-  }
-}
-
-.steps {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-}
-
-.number {
-  color: black;
-  font-weight: bolder;
-  font-size: 32px;
-  // padding: 12px;
-  width: 45px !important;
-}
-
-.home-img img {
-  right: 0;
-  z-index: -1;
-}
-
-.home-left {
-  padding: 64px;
-}
-
-#fonctionnement {
-  & h2 {
-    text-transform: uppercase;
-    font-weight: normal;
-    margin-bottom: 32px;
-  }
-}
-
-.step {
-  margin-bottom: 16px;
-}
-
-.number {
-  color: white;
-  background-color:black;
-  padding: 32px;
-  width: 25px;
-  height: 25px;
-  text-align: center;
-}
-
-.step-info {
-  padding-left: 32px;
-  height: 80px;
-  width: 275px;
-  transition: 0.3s;
-}
-
-.step-info:hover {
-    border-bottom: 3px solid black;
-  }

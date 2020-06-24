@@ -1,20 +1,20 @@
+.fom-esf {
+  width: 60%;
+}
+
 .form-side {
   padding: 72px;
-  width: 40%;
 }
 
 .form-group {
   & input {
-    border: 2px solid black;
+    border: none;
+    border-bottom: 2px solid $burgundy;
   }
   & label:first-child {
-    text-transform: uppercase;
-    font-size: small;
     color: rgb(75, 75, 75);
   }
   & legend {    
-    text-transform: uppercase;
-    font-size: small;
     color: rgb(75, 75, 75);
   }
   & button {
@@ -25,9 +25,6 @@
   }
   & abbr {
     display: none;
-  }
-  & input:checked ~ .checkmark {
-    background-color: red;
   }
 }
 

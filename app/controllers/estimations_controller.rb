@@ -1,17 +1,13 @@
 class EstimationsController < ApplicationController
-
-  def new
-    @estimation = Estimation.new
-  end
-
   def create
     @estimation = Estimation.new(estimation_params)
 
     if @estimation.save
-      flash.alert = "Estimation envoyée!"
-      render :new
+      flash.notice = "Estimation envoyée!"
+      redirect_to root_path
     else
-      render :new
+      flash.alert = "Oh, oh, il y a eu un petit pépin... Veuillez réessayer plus tard!"
+      redirect_to root_path
     end
   end
 

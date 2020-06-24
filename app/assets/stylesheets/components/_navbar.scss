@@ -1,50 +1,18 @@
-.esf-navbar-home .navbar-brand img, .esf-navbar .navbar-brand img {
-  width: 40px;
-}
-
-.esf-navbar-home {
-  background-color: $dark-blue;
-  padding: 12px;
-  position: sticky;
-  top: 0;
-  & li {
-    list-style: none;
-    display: inline-block;
-    padding-right: 32px;
-  }
-  & a {
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  & a:last-child:hover {
-    padding-bottom: 8px;
-    border-bottom: 3px solid white;
-  }
-}
-
 .esf-navbar {
   background-color: white;
   padding: 12px;
-  position: sticky;
-  top: 0;
   & li {
     list-style: none;
     display: inline-block;
     padding-right: 32px;
   }
   & a {
-    color: $dark-grey;
+    color: $burgundy;
     text-decoration: none;
     transition: 0.3s;
   }
   & a:last-child:hover {
     padding-bottom: 8px;
-    border-bottom: 3px solid $dark-grey;
+    border-bottom: 3px solid $burgundy;
   }
-}
-
-.navbar-active a {
-  padding-bottom: 8px;
-  border-bottom: 3px solid;
 }
