@@ -1,7 +1,47 @@
-.home-form {
-  display: flex;
-  justify-content: center;
-  & .form-inline div {
-    display: inline-block;
+.fom-esf {
+  width: 60%;
+}
+
+.form-side {
+  padding: 72px;
+}
+
+.form-group {
+  & input {
+    border: none;
+    border-bottom: 2px solid $burgundy;
   }
+  & label:first-child {
+    color: rgb(75, 75, 75);
+  }
+  & legend {    
+    color: rgb(75, 75, 75);
+  }
+  & button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  & abbr {
+    display: none;
+  }
+}
+
+svg {
+  fill: $burgundy !important;
+}
+
+/* Customize the label (the estimation_choices) */
+.estimation_choices {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

@@ -1,16 +1,71 @@
-<div class="wrapper">
-  <div class="header">
-    <h1>Quelle est la <br><span>valeur de ma maison?</span></h1>
+<%# Top section %>
+<div class="container d-flex" id="top">
+  <div class="row d-flex justify-content-between align-items-center">
+
+    <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+      <%= image_tag "https://images.unsplash.com/photo-1522444195799-478538b28823?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"%>
+    </div>
+
+    <div class="col-sm-12 col-md-6 d-flex justify-content-center flex-column align-items-center">
+      <h1>Voulez-vous connaître la valeur de votre propriété ?</h1>
+      <%= link_to "Débuter!", '/#form', class:'btn btn-esf mt-4'%>
+    </div>
+  </div>
+</div>
+
+<%# How it works section %>
+<div class="container d-flex flex-column justify-content-between align-items-center" id="how-it-works">
+  <div>
+    <h2>Comment cela fonctionne ?</h2>
   </div>
 
-  <div class="home-form">
-    <%= simple_form_for(@estimation) do |f| %>
-    <%= f.input_field :address, label: false, placeholder: 'Entrez votre addresse' %>
-    <%= f.button :submit, 'Estimer', class:"btn btn-esf", formaction: new_estimation_path %>
-    <% end %>
+  <div class="row card-esf d-flex justify-content-center align-items-center">
+      <div class="col-sm-12 col-md-6 container explanation">
+        <h3>Outil simple</h3>
+        <div class="d-flex justify-content-center">
+          <p>Notre outil est simple : lorsque vous êtes prêt à faire votre demande d’estimation, vous n’avez qu’à remplir le court formulaire, et un courtier vous recontactera pour vous donner son estimation.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 d-flex justify-content-center" id="first-img">
+        <%= image_tag "https://images.unsplash.com/photo-1513161455079-7dc1de15ef3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" %>
+      </div>
   </div>
 
-  <div class="home-picture">
-    <%= image_tag "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80" %>
+  <div class="row card-esf d-flex justify-content-center align-items-center">
+    <div class="col-sm-12 col-md-6 d-flex justify-content-center" id="second-img">
+      <%= image_tag "https://images.unsplash.com/photo-1533499966477-9333968a4e28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"%>
+    </div>
+
+    <div class="col-sm-12 col-md-6 container explanation">
+      <h3>Sans aucun engagement</h3>
+      <div class="d-flex justify-content-center">
+        <p>La demande d’estimation ne vous engage en rien. En d’autres mots, en remplissant le formulaire, vous ne vous engagez aucunement à vendre votre propriété.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row card-esf d-flex justify-content-center align-items-center">
+    <div class="col-sm-12 col-md-6 container explanation">
+      <h3>Gratuit</h3>
+      <div class="d-flex justify-content-center">
+        <p>Ce service est totalement gratuit ! Alors, qu’attendez-vous pour découvrir la valeur marchande de votre propriété ?</p>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 d-flex justify-content-center" id="first-img">
+      <%= image_tag "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"%>
+    </div>
+  </div>
+</div>
+
+<%# Form section %>
+<div class="container d-flex flex-column justify-content-between align-items-center" id="form">
+  <div>
+    <h2>Prêt à obtenir votre estimation?</h2>
+    <p>Remplissez tout simplement le court formulaire suivant, et le tour est joué !</p>
+  </div>
+  <div class="fom-esf">
+    <%= render 'shared/form'%>
   </div>
 </div>

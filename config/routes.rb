@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root to: "pages#home"
 
-  resources :estimations, only: [:new, :create]
+  resources :estimations, only: [:create]
 end

@@ -1,18 +1,13 @@
-.header {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40vh;
-  border: 3px solid red;
+#top {
+  height: 90vh;
+  & img {
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: -20px -20px $burgundy;
+  }
 }
 
-.header h1 span {
-  color: $dark-blue;
-  font-weight: bolder;
+#form {
+  margin-top: 64px;
 }
 
-.home-picture img{
-  width: 100%;
-  object-fit: cover;
-}
