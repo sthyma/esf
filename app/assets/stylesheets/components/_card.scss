@@ -1,25 +1,8 @@
-.card-esf {
-  margin-top: 32px;
+.why-card {
   img {
-    margin-top: 32px;
+    object-fit: cover;
   }
-}
-
-#how-it-works img {
   width: 300px;
   height: 300px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-#first-img img {
-  box-shadow: 20px -20px $burgundy;
-}
-
-#second-img img {
-  box-shadow: -20px -20px $burgundy;
-}
-
-.explanation {
-  width: 400px;
+  border-radius: 50%;
 }
