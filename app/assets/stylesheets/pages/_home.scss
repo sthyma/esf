@@ -1,13 +1,8 @@
-#top {
-  height: 90vh;
-  & img {
-    border-radius: 8px;
-    width: 300px;
-    box-shadow: -20px -20px $burgundy;
-  }
+h1 {
+  color: $burgundy;
+  font-size: 32px;
 }
 
-#form {
-  margin-top: 64px;
+#factors {
+  background-color: white;
 }
-
