@@ -4,5 +4,6 @@ class PagesController < ApplicationController
   end
 
   def eng
+    @estimation = Estimation.new
   end
 end
