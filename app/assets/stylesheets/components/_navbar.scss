@@ -1,18 +1,29 @@
 .esf-navbar {
-  background-color: white;
-  padding: 12px;
+  background: transparent;
+  padding: 32px 12px;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+
   & li {
     list-style: none;
     display: inline-block;
     padding-right: 32px;
   }
   & a {
-    color: $burgundy;
+    color: white;
     text-decoration: none;
     transition: 0.3s;
   }
   & a:last-child:hover {
     padding-bottom: 8px;
-    border-bottom: 3px solid $burgundy;
+    border-bottom: 3px solid white;
+  }
+}
+
+.navbar-active {
+  a {
+    padding-bottom: 8px;
+    border-bottom: 3px solid white;
   }
 }
