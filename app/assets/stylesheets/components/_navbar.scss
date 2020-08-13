@@ -9,7 +9,9 @@
     list-style: none;
     display: inline-block;
     padding-right: 32px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
   }
+
   & a {
     color: white;
     text-decoration: none;
@@ -19,11 +21,5 @@
     padding-bottom: 8px;
     border-bottom: 3px solid white;
   }
-}
 
-.navbar-active {
-  a {
-    padding-bottom: 8px;
-    border-bottom: 3px solid white;
-  }
 }

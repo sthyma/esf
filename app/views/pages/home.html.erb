@@ -1,9 +1,9 @@
-<div class="banner header" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1524813686514-a57563d77965?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80);">
+<div class="banner header" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1499310392581-322cec0355a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80);">
   <div class="container">
     <h1>Souhaitez-vous connaître la valeur de votre propriété ?</h1>
     <p>Remplissez ce court formulaire et le tour est joué !</p>
 
-    <div class="container d-flex justify-content-center align-items-center">
+    <div class="container d-flex justify-content-center align-items-center mt-5">
       <%= render 'shared/form' %>
     </div>
   </div>
@@ -11,7 +11,7 @@
 
 <div class="container my-5" id="why-section">
   <div class="d-flex justify-content-center align-items-center">
-    <h1>Pourquoi estimationsansfrais.com ?</h1>
+    <h1>Pourquoi evaluationsansfrais.com ?</h1>
   </div>
 
   <div class="container">
@@ -62,7 +62,45 @@
 <div class="py-5" id="factors">
   <div class="container">
     <div class="d-flex justify-content-center align-items-center">
-      <h1>Pourquoi estimationsansfrais.com ?</h1>
+      <h1>Quels facteurs influencent la valeur de ma maison ?</h1>
+    </div>
+
+    <div class="container">
+      <div class="row my-4 d-flex justify-content-around align-items-center">
+
+        <div class="card-value col-sm-12 col-xl-5">
+          <%= image_tag asset_path("house.jpg") %>
+          <div class="card-value-infos">
+            <h3>Le terrain</h3>
+            <p>Un terrain bien aménagé, spacieux et facile d'accès augmente la valeur d'une propriété.</p>
+          </div>
+        </div>
+
+        <div class="card-value col-sm-12 col-xl-5">
+          <%= image_tag asset_path("kitchen.jpg") %>
+          <div class="card-value-infos">
+            <h3>L'état de la propriété</h3>
+            <p>Une maison bien entretenue au fil des années augmentera la valeur de la propriété.</p>
+          </div>
+        </div>
+
+        <div class="card-value col-sm-12 col-xl-5">
+          <%= image_tag asset_path("interest.jpg") %>
+          <div class="card-value-infos">
+            <h3>Les taux d'intérêt</h3>
+            <p>Lorsque le taux d'intérêt hypothécaire augmente, la demande diminue, et la valeur de votre propriété en est affectée.</p>
+          </div>
+        </div>
+
+        <div class="card-value col-sm-12 col-xl-5">
+          <%= image_tag asset_path("city.jpg") %>
+          <div class="card-value-infos">
+            <h3>L'emplacement</h3>
+            <p>Si votre propriété est située dans un bon quartier, elle vaudra plus qu'une propriété situé dans un moins bon quartier.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </div>
