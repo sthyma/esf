@@ -1,1 +1,107 @@
-<h1>Hello!</h1>
+<%= render 'shared/navbar_eng'%>
+<div class="banner header" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1499310392581-322cec0355a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80);">
+  <div class="container">
+    <h1>Would you like to know the value of your immovable ?</h1>
+    <p>Fill in this form and you're done !</p>
+
+    <div class="mt-5">
+      <%= render 'shared/form' %>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5" id="why-section">
+  <div class="d-flex justify-content-center align-items-center">
+    <h1>Pourquoi evaluationsansfrais.com ?</h1>
+  </div>
+
+  <div class="container">
+    <div class="row d-flex justify-content-between align-items-center my-4">
+
+      <div class="flip-card col-sm-12 col-md-3">
+        <div class="flip-card-inner">
+          <div class="flip-card-front d-flex justify-content-center align-items-center" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80);width:300px;height:300px;border-radius:8px;">
+            <h2>Outil simple</h2>
+          </div>
+
+          <div class="flip-card-back d-flex justify-content-center align-items-center flex-column">
+            <h2>Outil simple</h2>
+            <p>Notre outil est simple : lorsque vous êtes prêt à faire votre demande d’estimation, vous n’avez qu’à remplir le court formulaire ci-haut. Un courtier vous recontactera pour vous donner son estimation.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card col-sm-12 col-md-3">
+        <div class="flip-card-inner">
+          <div class="flip-card-front d-flex justify-content-center align-items-center" style="background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);width:300px;height:300px;border-radius:8px;">
+            <h2>Sans aucun engagement</h2>
+          </div>
+
+          <div class="flip-card-back d-flex justify-content-center align-items-center flex-column">
+            <h2>Sans aucun engagement</h2>
+            <p>La demande d’estimation ne vous engage en rien. En d’autres mots, nous vous fournissons notre estimation de votre propriété : en remplissant le formulaire, vous ne vous engagez aucunement à vendre votre propriété.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card col-sm-12 col-md-3">
+        <div class="flip-card-inner">
+          <div class="flip-card-front d-flex justify-content-center align-items-center" style="background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(https://images.unsplash.com/photo-1556020685-ae41abfc9365?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);width:300px;height:300px;border-radius:8px;">
+            <h2>Gratuit</h2>
+          </div>
+
+          <div class="flip-card-back d-flex justify-content-center align-items-center flex-column">
+            <h2>Gratuit</h2>
+            <p>Vous savez ce qui est encore mieux ? Ce service est totalement gratuit ! Oui, oui, gratuit, comme dans « Vous ne payez pas un sou » ! Alors, qu’attendez-vous pour découvrir la valeur marchande de votre propriété ?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="py-5" id="factors">
+  <div class="container">
+    <div class="d-flex justify-content-center align-items-center">
+      <h1>Quels facteurs influencent la valeur de ma maison ?</h1>
+    </div>
+
+    <div class="container">
+      <div class="row my-4 d-flex justify-content-around align-items-center">
+
+        <div class="card-value col-sm-12 col-xl-5">
+          <%= image_tag asset_path("house.jpg") %>
+          <div class="card-value-infos">
+            <h3>Le terrain</h3>
+            <p>Un terrain bien aménagé, spacieux et facile d'accès augmente la valeur d'une propriété.</p>
+          </div>
+        </div>
+
+        <div class="card-value col-sm-12 col-xl-5">
+          <%= image_tag asset_path("kitchen.jpg") %>
+          <div class="card-value-infos">
+            <h3>L'état de la propriété</h3>
+            <p>Une maison bien entretenue au fil des années augmentera la valeur de la propriété.</p>
+          </div>
+        </div>
+
+        <div class="card-value col-sm-12 col-xl-5">
+          <%= image_tag asset_path("interest.jpg") %>
+          <div class="card-value-infos">
+            <h3>Les taux d'intérêt</h3>
+            <p>Lorsque le taux d'intérêt hypothécaire augmente, la demande diminue, et la valeur de votre propriété diminue.</p>
+          </div>
+        </div>
+
+        <div class="card-value col-sm-12 col-xl-5">
+          <%= image_tag asset_path("city.jpg") %>
+          <div class="card-value-infos">
+            <h3>L'emplacement</h3>
+            <p>Si votre propriété est située dans un bon quartier, elle vaudra plus qu'une propriété situé dans un moins bon quartier.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

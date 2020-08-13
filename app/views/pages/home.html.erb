@@ -1,9 +1,10 @@
+<%= render 'shared/navbar'%>
 <div class="banner header" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1499310392581-322cec0355a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80);">
   <div class="container">
     <h1>Souhaitez-vous connaître la valeur de votre propriété ?</h1>
     <p>Remplissez ce court formulaire et le tour est joué !</p>
 
-    <div class="container d-flex justify-content-center align-items-center mt-5">
+    <div class="mt-5">
       <%= render 'shared/form' %>
     </div>
   </div>
@@ -88,7 +89,7 @@
           <%= image_tag asset_path("interest.jpg") %>
           <div class="card-value-infos">
             <h3>Les taux d'intérêt</h3>
-            <p>Lorsque le taux d'intérêt hypothécaire augmente, la demande diminue, et la valeur de votre propriété en est affectée.</p>
+            <p>Lorsque le taux d'intérêt hypothécaire augmente, la demande diminue, et la valeur de votre propriété diminue.</p>
           </div>
         </div>
 
