@@ -1,7 +1,13 @@
 <%= simple_form_for(@estimation) do |f| %>
-  <%= f.input :first_name, label: 'Prénom' %>
-  <%= f.input :last_name, label: 'Nom de famille' %>
-  <%= f.input :address, label: 'Adresse', id: 'address_input' %>
-  <%= f.input :type_estimation, label: 'Je voudrais vendre...', as: :radio_buttons, collection: ["Dans les 3 prochains mois", "Dans les 6 prochains mois", "Dans les 12 prochains mois", "J'aimerais seulement avoir mon estimation"] %>
-  <%= f.button :submit, 'Envoyer', class:"btn btn-esf" %>
+  <div class="d-flex justify-conten-around align-items-center">
+    <div class="form-part">
+      <%= f.input :first_name, label: 'Prénom' %>
+      <%= f.input :last_name, label: 'Nom de famille' %>
+    </div>
+    <div class="form-part">
+      <%= f.input :address, label: 'Adresse', id: 'address_input' %>
+      <%= f.input :type_estimation, label: 'Je voudrais vendre...', as: :radio_buttons, collection: ["Dans les 3 prochains mois", "Dans les 6 prochains mois", "Dans les 12 prochains mois", "J'aimerais seulement avoir mon estimation"] %>
+      <%= f.button :submit, 'Envoyer', class:"btn btn-esf" %>
+    </div>
+  </div>
 <% end %>
