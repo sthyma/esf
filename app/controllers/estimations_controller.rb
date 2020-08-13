@@ -13,6 +13,6 @@ class EstimationsController < ApplicationController
 
   private
   def estimation_params
-    params.require(:estimation).permit(:first_name, :last_name, :address, :type_estimation)
+    params.require(:estimation).permit(:full_name, :phone, :email, :address, :type_estimation)
   end
 end
