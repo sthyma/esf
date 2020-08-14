@@ -1,0 +1,16 @@
+<%= simple_form_for(@estimation) do |f| %>
+  <div class="container">
+    <div class="row d-flex justify-content-around align-items-center">
+      <div class="form-part col-sm-12 col-md-5">
+        <%= f.input :full_name, label: 'Full name' %>
+        <%= f.input :email, label: 'Email address' %>
+        <%= f.input :phone, label: 'Phone number' %>
+      </div>
+      <div class="form-part col-sm-12 col-md-5">
+        <%= f.input :address, label: 'Address of your property', id: 'address_input' %>
+        <%= f.input :type_estimation, label: 'I would like to sell...', as: :radio_buttons, collection: [["In the next 3 months", "Dans les 3 prochains mois"], ["In the next 6 months", "Dans les 6 prochains mois"], ["In the next 12 months", "Dans les 12 prochains mois"], ["I would just like to get my estimate", "J'aimerais seulement avoir mon estimation"]] %>
+        <%= f.button :submit, 'Send', class:"btn btn-esf" %>
+      </div>
+    </div>
+  </div>
+<% end %>
