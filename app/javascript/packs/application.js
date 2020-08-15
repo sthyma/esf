@@ -35,8 +35,10 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 // import { typed } from "../components/typed_js"
 import { initAutocomplete } from '../plugins/init_autocomplete';
+import { navbarScroll } from '../components/navbar_scroll';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   initAutocomplete();
+  navbarScroll();
 });
