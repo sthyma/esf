@@ -16,24 +16,15 @@ ActiveRecord::Schema.define(version: 2020_08_14_184104) do
   enable_extension "plpgsql"
 
   create_table "estimations", force: :cascade do |t|
-<<<<<<< HEAD
-    t.string "first_name"
-    t.string "last_name"
-=======
     t.string "full_name"
     t.string "phone"
     t.string "email"
->>>>>>> 982b2f9f88d52606ece8dba649e5dacce37a771a
     t.string "address"
     t.string "type_estimation"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.float "latitude"
     t.float "longitude"
-<<<<<<< HEAD
-    t.string "type_estimation"
-=======
->>>>>>> 982b2f9f88d52606ece8dba649e5dacce37a771a
   end
 
 end
