@@ -4,6 +4,8 @@ class EstimationsController < ApplicationController
 
     if @estimation.save
       flash.notice = "Estimation envoyée, nous vous recontacterons sous peu !"
+      mail = EstimationMailer.with(estimation: @estimation).hello
+      mail.deliver_now
       redirect_to root_path
     else
       flash.alert = "Oh, oh, il y a eu un petit pépin... Veuillez réessayer plus tard"
