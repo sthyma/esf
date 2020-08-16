@@ -4,6 +4,7 @@
   position: fixed;
   top: 0px;
   width: 100vw;
+  z-index: 1000;
 
   & li {
     list-style: none;
@@ -25,8 +26,17 @@
 }
 
 .navbar-dark {
+  background-color: $burgundy;
+  padding: 0px;
+  padding-top: 12px;
+  margin-bottom: 0px;
+
+  & ul {
+    margin-bottom: 0px;
+  }
+
   & a {
-    color: black;
+    color: white;
     text-decoration: none;
     transition: 0.3s;
   }
