@@ -9,11 +9,17 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= favicon_link_tag asset_path('home.png') %>
+    <%= favicon_link_tag asset_path('logo.png') %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   </head>
 
   <body>
     <%=render 'shared/flashes'%>
+    <% if @french_navbar %>
+      <%= render 'shared/navbar'%>
+    <% else %>
+      <%= render 'shared/navbar_eng'%>
+    <% end %>
     <%= yield %>
     <%= render 'shared/footer'%>
   </body>
