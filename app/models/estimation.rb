@@ -1,7 +1,7 @@
 class Estimation < ApplicationRecord
   validates :full_name, presence: true
   validates :phone, presence: true
-  validates :email, presence: true, format: { with: /\A[^@\s]+@[^@\s]+\z/, message: "Veuillez entrer une adresse courriel valide." }
+  validates :email, presence: true, format: { with: /\A[^@\s]+@[^@\s]+\z/ }
   validates :address, presence: true
   validates :type_estimation, presence: true, inclusion: { in: ["Dans les 3 prochains mois", "Dans les 6 prochains mois", "Dans les 12 prochains mois", "J'aimerais seulement avoir mon estimation"] }
 
