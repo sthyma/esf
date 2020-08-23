@@ -1,12 +1,30 @@
-#new_estimation {
+.slidepage, .slidepage-2 {
   background-color: white;
   padding: 32px;
   border-radius: 8px;
-  width: 90%;
+  width: 700px;
+  height: fit-content;
+}
+
+.form-container {
+  overflow: hidden;
+  
+  form {
+    display: flex;
+    width: 200%;
+
+    .form-part {
+      width: 50%;
+      padding-right: 40px;
+      padding-left: 40px;
+      transition: margin-left 0.3s ease-in-out;
+    }
+  }
 }
 
 .form-part {
   text-align: left;
+  // width: 400px;
 }
 
 .form-group {

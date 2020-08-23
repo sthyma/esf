@@ -1,16 +1,21 @@
-<%= simple_form_for(@estimation) do |f| %>
-  <div class="container">
-    <div class="row d-flex justify-content-around align-items-center">
-      <div class="form-part col-sm-12 col-md-5">
-        <%= f.input :full_name, label: 'Nom complet' %>
-        <%= f.input :email, label: 'Adresse courriel' %>
-        <%= f.input :phone, label: 'Numéro de téléphone' %>
-      </div>
-      <div class="form-part col-sm-12 col-md-5">
-        <%= f.input :address, label: 'Adresse de votre propriété', id: 'address_input' %>
-        <%= f.input :type_estimation, label: 'Je voudrais vendre...', as: :radio_buttons, collection: ["Dans les 3 prochains mois", "Dans les 6 prochains mois", "Dans les 12 prochains mois", "J'aimerais seulement avoir mon estimation"] %>
-        <%= f.button :submit, 'Envoyer', class:"btn btn-esf" %>
+<div class="form-container">
+  <%= simple_form_for(@estimation) do |f| %>
+    <div class="form-part slidepage">
+      <%= f.input :address, label: 'Adresse de votre propriété', id: 'address_input' %>
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-esf nexbtn" type="button">Suivant</button>
       </div>
     </div>
-  </div>
-<% end %>
+    <div class="form-part slidepage-2">
+      <%= f.input :full_name, label: 'Nom complet' %>
+      <%= f.input :email, label: 'Adresse courriel' %>
+      <%= f.input :phone, label: 'Numéro de téléphone' %>
+      <%= f.input :type_estimation, label: 'Je voudrais vendre...', as: :radio_buttons, collection: ["Dans les 3 prochains mois", "Dans les 6 prochains mois", "Dans les 12 prochains mois", "J'aimerais seulement avoir mon estimation"] %>
+      <div class="field btns d-flex justify-content-around">
+        <button class="prev-1 prev btn btn-esf" type="button">Précédent</button>
+        <%= f.button :submit, 'Envoyer', class:"btn btn-esf submitBtn" %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
