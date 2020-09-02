@@ -5,6 +5,7 @@
   color: $burgundy;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  justify-content: space-between;
 
   .fa {
     margin-right: 12px;
@@ -18,7 +19,11 @@
 .footer-links {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+
+  @media (max-width: 692px) {
+    justify-content: center;
+  }
 }
 
 .footer-links a {
@@ -34,6 +39,10 @@
 
 .footer-copyright {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+
+  @media (max-width: 692px) {
+    justify-content: center;
+  }
 }
