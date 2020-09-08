@@ -8,6 +8,6 @@ class EstimationMailer < ApplicationMailer
   def hello
     @estimation = Estimation.last
 
-    mail(to: 'mmili.lim@gmail.com', subject: "Nouvelle demande d'estimation de evaluationsansfrais.ca")
+    mail(to: ENV['GMAIL_ADDRESS_RECIPIENT'], subject: "Nouvelle demande d'estimation de evaluationsansfrais.ca")
   end
 end
